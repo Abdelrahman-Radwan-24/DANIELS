@@ -1,0 +1,1152 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* ==================Start-Global================= */
+:root {
+  --color-of-white: #fff;
+  --color-of-black: #343434;
+  --color-of-black2: #000;
+  --color-of-reblack: #1c1c1c;
+  --color-of-light: #f7f7f7;
+}
+
+html {
+  scroll-padding-top: 72px;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: var(--color-of-white);
+  border-left: 2px solid #eee;
+  -webkit-box-shadow: 0px 0px 21px 0px #0003 inset;
+          box-shadow: 0px 0px 21px 0px #0003 inset;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-of-black2);
+  -webkit-box-shadow: 0px 0px 10px 0px #eeeeee8c inset;
+          box-shadow: 0px 0px 10px 0px #eeeeee8c inset;
+  border-radius: 100vh;
+}
+
+.space-p {
+  padding: 6.25rem 0 4.375rem;
+}
+.titile {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.titile h3 {
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-of-black);
+  font-weight: 900;
+  line-height: 2.75rem;
+  font-size: 2.5rem;
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  z-index: 4;
+}
+
+.titile h3::after {
+  content: "";
+  width: 100%;
+  height: 1.875rem;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -0.625rem;
+  left: 0;
+  z-index: -1;
+}
+/* ===================End-Global================= */
+
+/* ===================Start-Navbar================*/
+
+nav {
+  margin-bottom: 1.25rem;
+}
+
+nav .nav-link {
+  --bs-nav-link-color: var(--color-of-white);
+  --bs-nav-link-hover-color: var(--color-of-white);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+nav .navbar-brand {
+  font-family: "Montserrat", sans-serif;
+}
+
+nav .navbar-nav > li {
+  padding: 0 1.25rem;
+}
+
+nav .navbar-toggler:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+nav .navbar-toggler {
+  border: none;
+  border-radius: 0;
+}
+
+body:has(ul li:not(:first-child) a.active) nav {
+  background-color: var(--color-of-white);
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body:has(ul li:not(:first-child) a.active) .navbar-nav .nav-link::after {
+  background-color: var(--color-of-black2);
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body:has(ul li:not(:first-child) a.active) nav a,
+body:has(ul li:not(:first-child) a.active) nav i {
+  color: var(--color-of-black2) !important;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/* =====================End-Navbar=================*/
+
+/* ===============Start-home-section===============*/
+
+header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7))),
+    url(../imgs/bg.jpg);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7) 0% 100%),
+    url(../imgs/bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0% 100%),
+    url(../imgs/bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+header h5 {
+  font-size: 3.125rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+header h1 {
+  font-size: 3.75rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 4.5rem;
+}
+
+header .part-1 {
+  font-weight: 200;
+  padding: 0.75rem 0;
+  display: inline-block;
+}
+header .auto-type {
+  padding: 0.75rem 0;
+  display: inline-block;
+}
+
+.auto-type::after {
+  content: "";
+  -webkit-animation: typing 9s linear infinite;
+          animation: typing 9s linear infinite;
+}
+@-webkit-keyframes typing {
+  0% {
+    content: " |";
+  }
+  1.5873015873015874% {
+    content: " | ";
+  }
+  3.174603174603175% {
+    content: " L |";
+  }
+  4.761904761904763% {
+    content: " La |";
+  }
+  6.34920634920635% {
+    content: " Lar |";
+  }
+  7.936507936507937% {
+    content: " Larr |";
+  }
+  9.523809523809526% {
+    content: " Larry |";
+  }
+  11.111111111111112% {
+    content: " Larry  |";
+  }
+  12.6984126984127% {
+    content: " Larry D |";
+  }
+  14.285714285714286% {
+    content: " Larry Da |";
+  }
+  15.873015873015873% {
+    content: " Larry Dan |";
+  }
+  17.460317460317462% {
+    content: " Larry Dani |";
+  }
+  19.04761904761905% {
+    content: " Larry Danie |";
+  }
+  20.634920634920636% {
+    content: " Larry Daniel |";
+  }
+  22.222222222222225% {
+    content: " Larry Daniels |";
+  }
+  21.42857142857143% {
+    content: " Larry Daniels |";
+  }
+  22.22222222222222% {
+    content: " Larry Daniel |";
+  }
+  23.01587301587302% {
+    content: " Larry Danie |";
+  }
+  23.80952380952381% {
+    content: " Larry Dani |";
+  }
+  24.603174603174605% {
+    content: " Larry Dan |";
+  }
+  25.3968253968254% {
+    content: " Larry Da |";
+  }
+  26.190476190476193% {
+    content: " Larry D |";
+  }
+  26.984126984126988% {
+    content: " Larry  |";
+  }
+  27.77777777777778% {
+    content: " Larry |";
+  }
+  28.571428571428573% {
+    content: " Larr |";
+  }
+  29.365079365079367% {
+    content: " Lar |";
+  }
+  30.15873015873016% {
+    content: " La |";
+  }
+  30.952380952380956% {
+    content: " L |";
+  }
+  31.746031746031747% {
+    content: "  |";
+  }
+  33.333333333333336% {
+    content: " |";
+  }
+  35.80246913580247% {
+    content: "D |";
+  }
+  38.27160493827161% {
+    content: "De |";
+  }
+  40.74074074074075% {
+    content: "Dev |";
+  }
+  43.20987654320988% {
+    content: "Deve |";
+  }
+  45.67901234567901% {
+    content: "Devel |";
+  }
+  48.14814814814815% {
+    content: "Develo |";
+  }
+  50.61728395061729% {
+    content: "Develop |";
+  }
+  53.086419753086425% {
+    content: "Develope |";
+  }
+  55.55555555555556% {
+    content: "Developer |";
+  }
+  54.32098765432099% {
+    content: "Developer |";
+  }
+  55.55555555555556% {
+    content: "Develope |";
+  }
+  56.79012345679013% {
+    content: "Develop |";
+  }
+  58.0246913580247% {
+    content: "Develo |";
+  }
+  59.25925925925927% {
+    content: "Devel |";
+  }
+  60.49382716049383% {
+    content: "Deve |";
+  }
+  61.7283950617284% {
+    content: "Dev |";
+  }
+  62.96296296296297% {
+    content: "De |";
+  }
+  64.19753086419753% {
+    content: "D |";
+  }
+  66.66666666666667% {
+    content: " |";
+  }
+  69.44444444444444% {
+    content: "D |";
+  }
+  72.22222222222223% {
+    content: "De |";
+  }
+  75% {
+    content: "Des |";
+  }
+  77.77777777777779% {
+    content: "Desi |";
+  }
+  80.55555555555556% {
+    content: "Desig |";
+  }
+  83.33333333333334% {
+    content: "Design |";
+  }
+  86.11111111111111% {
+    content: "Designe |";
+  }
+  88.8888888888889% {
+    content: "Designer |";
+  }
+  87.5% {
+    content: "Designer |";
+  }
+  88.88888888888889% {
+    content: "Designe |";
+  }
+  90.27777777777777% {
+    content: "Design |";
+  }
+  91.66666666666667% {
+    content: "Desig |";
+  }
+  93.05555555555556% {
+    content: "Desi |";
+  }
+  94.44444444444444% {
+    content: "Des |";
+  }
+  95.83333333333333% {
+    content: "De |";
+  }
+  97.22222222222223% {
+    content: "D |";
+  }
+  100% {
+    content: " |";
+  }
+}
+@keyframes typing {
+  0% {
+    content: " |";
+  }
+  1.5873015873015874% {
+    content: " | ";
+  }
+  3.174603174603175% {
+    content: " L |";
+  }
+  4.761904761904763% {
+    content: " La |";
+  }
+  6.34920634920635% {
+    content: " Lar |";
+  }
+  7.936507936507937% {
+    content: " Larr |";
+  }
+  9.523809523809526% {
+    content: " Larry |";
+  }
+  11.111111111111112% {
+    content: " Larry  |";
+  }
+  12.6984126984127% {
+    content: " Larry D |";
+  }
+  14.285714285714286% {
+    content: " Larry Da |";
+  }
+  15.873015873015873% {
+    content: " Larry Dan |";
+  }
+  17.460317460317462% {
+    content: " Larry Dani |";
+  }
+  19.04761904761905% {
+    content: " Larry Danie |";
+  }
+  20.634920634920636% {
+    content: " Larry Daniel |";
+  }
+  22.222222222222225% {
+    content: " Larry Daniels |";
+  }
+  21.42857142857143% {
+    content: " Larry Daniels |";
+  }
+  22.22222222222222% {
+    content: " Larry Daniel |";
+  }
+  23.01587301587302% {
+    content: " Larry Danie |";
+  }
+  23.80952380952381% {
+    content: " Larry Dani |";
+  }
+  24.603174603174605% {
+    content: " Larry Dan |";
+  }
+  25.3968253968254% {
+    content: " Larry Da |";
+  }
+  26.190476190476193% {
+    content: " Larry D |";
+  }
+  26.984126984126988% {
+    content: " Larry  |";
+  }
+  27.77777777777778% {
+    content: " Larry |";
+  }
+  28.571428571428573% {
+    content: " Larr |";
+  }
+  29.365079365079367% {
+    content: " Lar |";
+  }
+  30.15873015873016% {
+    content: " La |";
+  }
+  30.952380952380956% {
+    content: " L |";
+  }
+  31.746031746031747% {
+    content: "  |";
+  }
+  33.333333333333336% {
+    content: " |";
+  }
+  35.80246913580247% {
+    content: "D |";
+  }
+  38.27160493827161% {
+    content: "De |";
+  }
+  40.74074074074075% {
+    content: "Dev |";
+  }
+  43.20987654320988% {
+    content: "Deve |";
+  }
+  45.67901234567901% {
+    content: "Devel |";
+  }
+  48.14814814814815% {
+    content: "Develo |";
+  }
+  50.61728395061729% {
+    content: "Develop |";
+  }
+  53.086419753086425% {
+    content: "Develope |";
+  }
+  55.55555555555556% {
+    content: "Developer |";
+  }
+  54.32098765432099% {
+    content: "Developer |";
+  }
+  55.55555555555556% {
+    content: "Develope |";
+  }
+  56.79012345679013% {
+    content: "Develop |";
+  }
+  58.0246913580247% {
+    content: "Develo |";
+  }
+  59.25925925925927% {
+    content: "Devel |";
+  }
+  60.49382716049383% {
+    content: "Deve |";
+  }
+  61.7283950617284% {
+    content: "Dev |";
+  }
+  62.96296296296297% {
+    content: "De |";
+  }
+  64.19753086419753% {
+    content: "D |";
+  }
+  66.66666666666667% {
+    content: " |";
+  }
+  69.44444444444444% {
+    content: "D |";
+  }
+  72.22222222222223% {
+    content: "De |";
+  }
+  75% {
+    content: "Des |";
+  }
+  77.77777777777779% {
+    content: "Desi |";
+  }
+  80.55555555555556% {
+    content: "Desig |";
+  }
+  83.33333333333334% {
+    content: "Design |";
+  }
+  86.11111111111111% {
+    content: "Designe |";
+  }
+  88.8888888888889% {
+    content: "Designer |";
+  }
+  87.5% {
+    content: "Designer |";
+  }
+  88.88888888888889% {
+    content: "Designe |";
+  }
+  90.27777777777777% {
+    content: "Design |";
+  }
+  91.66666666666667% {
+    content: "Desig |";
+  }
+  93.05555555555556% {
+    content: "Desi |";
+  }
+  94.44444444444444% {
+    content: "Des |";
+  }
+  95.83333333333333% {
+    content: "De |";
+  }
+  97.22222222222223% {
+    content: "D |";
+  }
+  100% {
+    content: " |";
+  }
+}
+
+header .home-icon span {
+  display: inline-block;
+  font-size: 0.875rem;
+  width: 2.1875rem;
+  height: 2.1875rem;
+  line-height: 2.1875rem;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+header .home-icon a {
+  color: var(--color-of-white);
+}
+
+/* ================End-home-section================*/
+
+/* ==============Start-about-section============== */
+
+#about .about-image {
+  position: relative;
+}
+
+#about .about-image::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  left: 0px;
+  bottom: -30px;
+  z-index: -1;
+}
+
+#about .about-title h3 {
+  font-family: "Montserrat", sans-serif;
+}
+#about .about-title span {
+  font-size: 0.875rem;
+  font-family: "Poppins", sans-serif;
+  color: #999999;
+  letter-spacing: 3px;
+}
+
+#about .about-title p {
+  font-family: "Poppins", sans-serif;
+  color: #748182;
+  font-size: 0.9375rem;
+}
+
+#about .about-pro {
+  width: 100%;
+  height: 1.5625rem;
+  background-color: var(--color-of-light);
+  -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+          box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+}
+
+#about .pro-sm {
+  background-color: var(--color-of-reblack);
+  height: 1.5625rem;
+  border-radius: 0 0.3125rem 0.3125rem 0;
+}
+
+#about .pro-sm span {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 0.8938rem;
+  color: var(--color-of-white);
+  padding: 0.3125rem;
+}
+
+#about label {
+  background-color: var(--color-of-reblack);
+  color: var(--color-of-white);
+  padding: 0.625rem 1.5625rem;
+  font-size: 0.8125rem;
+  line-height: 1.1607rem;
+  font-family: "Poppins", sans-serif;
+  margin-top: 1.25rem;
+  border: 0.125rem solid #1c1c1c;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#about label:hover {
+  background-color: var(--color-of-white);
+  color: var(--color-of-reblack);
+}
+
+#about button {
+  background-color: var(--color-of-white);
+  border: 2px solid #1c1c1c;
+  margin-top: 20px;
+  padding: 0.625rem 1.875rem;
+  font-size: 0.8125rem;
+  line-height: 1.1607rem;
+  font-family: "Poppins", sans-serif;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#about button:hover {
+  background-color: var(--color-of-reblack);
+}
+
+#about button a {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#about button:hover a {
+  color: #eeeeee !important;
+}
+/* ==============End-about-section============== */
+
+/* ===========Start-services-section============ */
+
+#services {
+  background-color: var(--color-of-light);
+}
+
+#services .services-icons {
+  padding: 3.125rem 1.25rem;
+  background-color: var(--color-of-white);
+  -webkit-box-shadow: 0px 0.625rem 1.875rem -0.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0.625rem 1.875rem -0.5rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.875rem;
+  border-radius: 0.3125rem;
+}
+
+#services .services-icons .icon span {
+  font-size: 1.875rem;
+  margin-bottom: 1.25rem;
+  width: 4.375rem;
+  height: 4.375rem;
+  line-height: 4.375rem;
+  background-color: var(--color-of-light);
+  border-radius: 50%;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#services .services-icons h6 {
+  font-size: 1.125rem;
+  font-weight: 800;
+  line-height: 1.2375rem;
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-of-black);
+}
+
+#services .services-icons p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+  font-family: "Poppins", sans-serif;
+  color: #748182;
+  word-spacing: 0.125rem;
+}
+
+#services .services-icons:hover span {
+  background-color: var(--color-of-reblack);
+  color: var(--color-of-white);
+}
+
+/* ===========End-services-section============ */
+
+/* ===========Start-works-section============= */
+
+#works .nav-tabs {
+  --bs-nav-tabs-border-width: unset;
+  --bs-nav-tabs-border-color: unset;
+  --bs-nav-tabs-border-radius: unset;
+  --bs-nav-tabs-link-hover-border-color: unset;
+  --bs-nav-tabs-link-active-color: #222;
+  --bs-nav-tabs-link-active-bg: unset;
+  --bs-nav-tabs-link-active-border-color: unset;
+  border-bottom: none;
+}
+
+#works .nav-tabs .nav-link {
+  color: #222;
+  font-weight: 700;
+  font-size: 1rem;
+  position: relative;
+}
+#works .nav-tabs .nav-link::after {
+  content: "";
+  width: 0%;
+  height: 0.1875rem;
+  background-color: var(--color-of-black2);
+  position: absolute;
+  bottom: -0.3125rem;
+  left: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+#works .nav-tabs .nav-link.active:after {
+  width: 100%;
+}
+
+#works .works-card .layer {
+  position: absolute;
+  top: 0.3125rem;
+  left: 0.3125rem;
+  right: 0.3125rem;
+  bottom: 0.3125rem;
+  background: rgba(255, 255, 255, 0.95);
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 0;
+  -webkit-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+#works .works-card:hover .layer {
+  opacity: 1;
+  -webkit-transform: translate(0);
+      -ms-transform: translate(0);
+          transform: translate(0);
+}
+
+#works .works-card .layer-items {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translatey(-50%);
+      -ms-transform: translatey(-50%);
+          transform: translatey(-50%);
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#works .works-card .layer-items h6 {
+  line-height: 0.825rem;
+  color: var(--color-of-black);
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 0.9375rem;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+  -webkit-transform: translateY(-0.9375rem);
+      -ms-transform: translateY(-0.9375rem);
+          transform: translateY(-0.9375rem);
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#works .works-card:hover h6 {
+  -webkit-transform: translatey(0.3125rem);
+      -ms-transform: translatey(0.3125rem);
+          transform: translatey(0.3125rem);
+}
+
+#works .works-card .layer-items .icons-2 {
+  -webkit-transform: translatey(0.9375rem);
+      -ms-transform: translatey(0.9375rem);
+          transform: translatey(0.9375rem);
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#works .works-card:hover .icons-2 {
+  -webkit-transform: translatey(-0.3125rem);
+      -ms-transform: translatey(-0.3125rem);
+          transform: translatey(-0.3125rem);
+}
+
+#works .works-card .layer-items .icons-2 span {
+  width: 1.875rem;
+  height: 1.875rem;
+  line-height: 1.75rem;
+  border-radius: 50%;
+  border: 0.0625rem solid #111;
+  background-color: #111;
+  font-size: 0.875rem;
+}
+
+#works .works-card .layer-items .icons-2 span:hover {
+  background-color: var(--color-of-white);
+}
+
+#works .works-card .layer-items .icons-2 span:hover i {
+  color: var(--color-of-black2);
+}
+
+/* =============End-works-section============= */
+
+/* ============Start-clients-section=========== */
+
+#clients {
+  background-color: var(--color-of-light);
+  padding: 6.25rem 0;
+}
+
+#clients .owl-carousel .item .client-image {
+  width: 5.625rem;
+  height: 5.625rem;
+  margin: 0 auto 0.9375rem;
+}
+
+#clients .owl-carousel .item .client-image img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+#clients .owl-carousel .item p {
+  word-spacing: 0.125rem;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.9375rem;
+  color: #748182;
+  font-family: "Poppins", sans-serif;
+}
+
+#clients .owl-carousel .item h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1.875rem 0 0.3125rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.1rem;
+  color: var(--color-of-black);
+}
+
+#clients .owl-carousel .item span {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #888;
+  margin-bottom: 1.875rem;
+  display: inline-block;
+  line-height: 17.1429px;
+  font-family: "Poppins", sans-serif;
+}
+
+.owl-dots {
+  margin-top: 10px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+.owl-carousel button.owl-dot {
+  height: 0.75rem;
+  width: 0.75rem;
+  margin: 0 0.3125rem;
+  border-radius: 50%;
+  background-color: #d6d6d6;
+  opacity: 0.5;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+.owl-carousel button.owl-dot.active,
+.owl-carousel button.owl-dot:hover {
+  opacity: 1;
+  background-color: #869791;
+}
+
+/* =============End-clients-section============= */
+
+/* ================Start-counter================ */
+
+.counter {
+  padding: 6.25rem 0;
+}
+
+.counter .child span {
+  font-size: 1.875rem;
+  margin-bottom: 0.9375rem;
+  line-height: 1.875rem;
+  display: inline-block;
+}
+
+.counter .child h3 {
+  font-size: 1.875rem;
+  line-height: 1.875rem;
+  font-weight: 900;
+  margin-bottom: 0.9375rem;
+}
+
+.counter .child p {
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.875rem;
+  font-family: "Poppins", sans-serif;
+  color: #748182;
+}
+
+/* ================End-counter================== */
+
+/* =============Start-team-section============= */
+
+#team {
+  background-color: var(--color-of-light);
+  padding: 6.25rem 0;
+}
+#team .teams {
+  background-color: rgba(52, 52, 52, 0.8);
+  margin-bottom: 0.625rem;
+}
+#team .teams .team-imge .layout {
+  position: absolute;
+  inset: 0.3125rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  opacity: 0;
+}
+
+#team .teams:hover .layout {
+  opacity: 1;
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+}
+
+#team .teams .team-imge img {
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+#team .team-imge:hover img {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#team .teams .team-imge .layout ul li a {
+  border: 1px solid #000;
+  color: #fff;
+  background-color: var(--color-of-black2);
+  display: block;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+#team .teams .team-imge .layout ul li a:hover {
+  background-color: var(--color-of-white);
+  color: var(--color-of-black2);
+}
+
+#team .teams .img-text h4 {
+  margin-bottom: 0.3125rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7188rem;
+  font-weight: 500;
+  font-size: 1.5625rem;
+}
+
+#team .teams .img-text h5 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.375rem;
+  margin: 0;
+}
+
+/* ==============End-team-section============== */
+
+/* ============Start-contact-section============ */
+
+#contact {
+  padding: 6.25rem 0;
+}
+
+#contact .address {
+  margin-bottom: 1.875rem;
+}
+#contact .address span {
+  display: inline-block;
+  font-size: 1.5625rem;
+  margin-bottom: 0.9375rem;
+  width: 3.75rem;
+  height: 3.75rem;
+  line-height: 3.75rem;
+  background-color: var(--color-of-light);
+  border-radius: 50%;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#contact .address:hover span {
+  background-color: var(--color-of-reblack);
+  color: var(--color-of-white);
+}
+
+#contact .address h6 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 17.6px;
+  color: var(--color-of-black);
+}
+
+#contact .address p {
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.9375rem;
+  color: #748182;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9375rem;
+}
+textarea {
+  resize: both;
+}
+#contact input,
+#contact textarea {
+  background-color: #f4f4f4;
+}
+
+.form-control:focus {
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+}
+
+.form-control {
+  border: 0;
+}
+
+#contact button {
+  background-color: var(--color-of-reblack);
+  color: #eeeeee;
+  border: 0.0625rem solid #1c1c1c;
+  margin-top: 1.25rem;
+  padding: 0.625rem 2.5rem;
+  font-size: 0.8125rem;
+  line-height: 1.1607rem;
+  font-family: "Poppins", sans-serif;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#contact button:hover {
+  background-color: var(--color-of-white);
+  color: var(--color-of-reblack);
+}
+
+/* ==============End-contact-section============== */
+
+/* ==================Start-Footer================= */
+
+footer {
+  background-color: var(--color-of-reblack);
+  padding: 1.5625rem;
+}
+
+footer p {
+  font-size: 0.8125rem;
+  word-spacing: 0.125rem;
+  color: #748182;
+}
+
+/* ===================End-Footer=================== */

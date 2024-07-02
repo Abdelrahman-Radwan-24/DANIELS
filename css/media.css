@@ -1,0 +1,79 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* =================Start-Navbar=================*/
+
+@media (max-width: 992px) {
+  nav .navbar-nav {
+    text-align: center;
+  }
+
+  nav {
+    background-color: var(--color-of-white);
+  }
+
+  nav .nav-link {
+    --bs-nav-link-color: var(--color-of-black);
+    --bs-nav-link-hover-color: var(--color-of-black);
+  }
+
+  .navbar-brand {
+    --bs-navbar-brand-color: #000;
+    font-weight: 700 !important;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-nav .nav-link.active {
+    color: var(--color-of-white);
+    position: relative;
+  }
+  .navbar-nav .nav-link {
+    position: relative;
+  }
+  .navbar-nav .nav-link::after {
+    content: "";
+    width: 0%;
+    height: 0.125rem;
+    background: var(--color-of-white);
+    position: absolute;
+    bottom: 5px;
+    left: 8px;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+  }
+  .navbar-nav .nav-link.active::after {
+    width: 72%;
+  }
+
+  .navbar-brand {
+    --bs-navbar-brand-color: var(--color-of-white);
+    --bs-navbar-brand-hover-color: var(--color-of-white);
+  }
+}
+
+/* ===================End-Navbar===================*/
+
+/* ===============Start-home-section===============*/
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1170px) {
+  header h1 {
+    font-size: 2.75rem;
+    line-height: 3.3rem;
+  }
+}
+
+/* ================End-home-section================*/
